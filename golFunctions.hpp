@@ -25,9 +25,12 @@
 #define GOLFUNCTIONS_HPP
 
 #ifdef _WIN32
+#include <windows.h>
 #define CLEAR() system("CLS")
+#define SLEEP() Sleep(100)
 #else
 #define CLEAR() system("clear")
+#define SLEEP() usleep(100000);
 #endif
 
 #define ROWS 24

@@ -59,7 +59,7 @@ int main()
       for (int i = 0; i < 100; i++)
       {
         printGame(gameOfLife);
-        usleep(100000);
+        SLEEP();
         updateGame(gameOfLife, temp);
       }
     }
